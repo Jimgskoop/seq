@@ -1,5 +1,5 @@
 # seq
-A browser-based analog-style music sequencer with MIDI I/O.
+A browser-based analog-style music sequencer with MIDI I/O, based on ideas from https://github.com/tomarus/midiseq.
 
 Planned architecture:
 * Jazz-Plugin http://jazz-soft.net/
