@@ -15,4 +15,4 @@ Features/Goals:
 * MIDI I/O to control & be controlled by external hardware
 
 
-**NOTE: this is a work-in-progress**
+**NOTE: This is a work-in-progress, no release milestone planned as of yet.**
