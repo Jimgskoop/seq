@@ -1,4 +1,4 @@
-define(['jquery', 'Step'], function(Step) {
+define(['jquery', 'Step'], function($, Step) {
 
   var Seq = function (el) {
     this.$el = $(el);

@@ -1,5 +1,5 @@
-require(['Seq'], function(Seq) {
+require(['Clock'], function(Clock) {
 
-  var seq1 = new Seq($('ol'));
+  var clock = new Clock();
 
 });

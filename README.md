@@ -15,4 +15,9 @@ Features/Goals:
 * MIDI I/O to control & be controlled by external hardware
 
 
+Objects:
+* Clock
+* Track
+* Step
+
 **NOTE: this is a work-in-progress**

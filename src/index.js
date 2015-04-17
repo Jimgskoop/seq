@@ -5,14 +5,18 @@
 // directory.
 
 require.config({
+  baseUrl: 'src',
   paths: {
     jquery: '../lib/jquery-2.1.3/jquery.min',
-    Seq: './Seq',
-    Step: './Step',
+    lib: '../lib',
+    Seq: 'Seq',
+    Step: 'Step',
+    Clock: 'Clock',
+    spec: '../spec'
   }
 });
 
 
 // Start loading the main app file. Put all of
 // your application logic in there.
-require(['main']);
+//erequire(['main']);
