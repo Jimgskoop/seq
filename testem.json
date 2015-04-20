@@ -1,8 +1,14 @@
 {
   "framework": "mocha+chai",
+  "test_page": "testem.mustache",
+  "watch_files": [
+    "js/**/*.js"
+  ],
   "src_files": [
-    "js/**/*.js",
-    "spec/**/*.spec.js"
+    "test/specs/**/*.spec.js"
+  ],
+  "launch_in_dev": [
+    "chrome"
   ]
 }
 

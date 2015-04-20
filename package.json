@@ -4,16 +4,16 @@
   "description": "midi sequencer",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/testem"
+    "testAll": "./node_modules/.bin/testem",
+    "testPage": "./node_modules/.bin/testem --test_page "
   },
   "dependencies": {
     "connect": "^3.3.4",
-    "serve-static": "^1.9.1",
-    "backbone.marionette": "^2.4.1",
-    "jquery": "^2.1.3",
-    "require": "^2.4.17"
+    "serve-static": "^1.9.1"
   },
   "devDependencies": {
+    "mocha": "^2.2.4",
+    "chai": "^2.2.0",
     "testem": "^0.7.7",
     "js-fixtures": "^1.5.3"
   },
