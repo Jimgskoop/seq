@@ -1,0 +1,15 @@
+body {
+  /* 60px to move the container down and
+   * make room for the navigation bar */
+   padding-top: 60px;
+}
+
+
+.step {
+  padding: 10px;
+}
+
+.step label {
+  display: inline;
+  padding: 10px;
+}
