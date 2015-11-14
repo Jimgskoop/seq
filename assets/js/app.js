@@ -1,4 +1,5 @@
-require(['Sequencer', 'marionette', 'backbone'], function(Sequencer, Marionette, Backbone) {
+require(['js/Sequencer', 'marionette', 'backbone', 'underscore', 'text!templates/step.tmpl'], 
+  function(Sequencer, Marionette, Backbone, _, step) {
 
 
   Sequencer.on('start', function () {
@@ -13,7 +14,7 @@ require(['Sequencer', 'marionette', 'backbone'], function(Sequencer, Marionette,
   });
 
   Sequencer.StepView = Marionette.ItemView.extend({
-    template: '#step-template',
+    template: _.template(step),
     className: 'step',
     tagName: 'li',
     events: {
@@ -43,7 +44,7 @@ require(['Sequencer', 'marionette', 'backbone'], function(Sequencer, Marionette,
   });
 
   Sequencer.on('before:start', function () {
-    // Question: why does this have to be instantiated at before:start, 
+    // Question: why does this have to be instantiated at before:start,
     // vs. just in the normal program flow?
     Sequencer.regions = new RegionContainer();
   });
