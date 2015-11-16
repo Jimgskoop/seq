@@ -1,6 +1,6 @@
 /*global define, window */
 
-define(['Clock'], function (){
+define(['underscore', 'lib/audiocontextpatch-0.0.0/AudioContextMonkeyPatch'], function (_, acMonkeyPatch){
 
   var Clock = function () {
     this.bpm = 120;
@@ -19,7 +19,6 @@ define(['Clock'], function (){
     run: function () {
       var self = this;
       this.running = true;
-      console.log(this.next());
       this.timer = window.setTimeout(function() {
         self.run();
       }, this.getTempo());

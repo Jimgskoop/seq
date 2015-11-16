@@ -1,9 +1,9 @@
-require(['js/Sequencer', 'marionette', 'backbone', 'underscore', 'text!templates/step.tmpl'], 
-  function(Sequencer, Marionette, Backbone, _, step) {
+require(['js/Sequencer', 'marionette', 'backbone', 'underscore', 'text!templates/step.tmpl', 'js/Clock'],
+  function(Sequencer, Marionette, Backbone, _, step, Clock) {
 
 
   Sequencer.on('start', function () {
-    console.log('Sequencer has started!');
+    window.console.log('Sequencer has started!');
   });
 
   Sequencer.StepModel = Backbone.Model.extend({
@@ -21,7 +21,7 @@ require(['js/Sequencer', 'marionette', 'backbone', 'underscore', 'text!templates
       'click': 'alertNoteNumber'
     },
     alertNoteNumber: function () {
-      alert(this.model.escape('noteVal'));
+      window.alert(this.model.escape('noteVal'));
     }
   });
 
